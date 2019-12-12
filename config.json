@@ -1,0 +1,24 @@
+{	
+	"data": "./data/trump_final.csv",
+	"batch_size": 128,
+	"seq_len": 40,
+	"data_selector": {},
+	"data_cols": ["text"],
+	"vocab_dict_path": "tweets.pickle",
+	"use_exist_model": true,
+	"use_exist_model_path": "./saved_models/12122019-233404-e1.h5",
+	"new_training": false,
+	"new_training_info":{
+		"embedding_out" :64,
+		"rnn_units": 128,
+		"is_load": false,
+		"epochs": 1,
+		"save_dir": "./saved_models"
+	},
+	"continue_training": true,
+	"continue_training_info":{
+		"model_path" : "./saved_models/12122019-233404-e1.h5",
+		"epochs": 1,
+		"save_dir": "./saved_models"
+	}
+}
